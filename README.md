@@ -35,13 +35,16 @@ $$f'(x_{\text{filtered}}) = 0$$
 ## Quick Start & Usage
 
 **1. Clone the repository and navigate to the directory:**
-`git clone https://github.com/YourUsername/deterministic-signal-extractor.git`
+`git clone https://github.com/Rachit218/deterministic-signal-extractor.git`
 `cd deterministic-signal-extractor`
 
 **2. Install the required quantitative libraries:**
 `pip install pandas yfinance statsmodels scipy matplotlib streamlit`
 
-**3. Launch the Dashboard:**
+**3. Populate the data:**
+`python data_downloader.py`
+
+**4. Launch the Dashboard:**
 `streamlit run app_extractor.py`
 
 *(Note: In the UI, use the sidebar to fetch 1-year historical data for known cointegrated pairs like BRK-A and BRK-B before tuning the filter).*
